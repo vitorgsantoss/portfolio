@@ -24,7 +24,7 @@ html {
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0.537)), url('img/background.webp');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover  auto;
     background-position: center;
     background-attachment: fixed;
 
