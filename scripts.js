@@ -13,3 +13,14 @@ function sendMessage(event){
     window.open(url, '_blank')
 
 }
+
+function openMenu() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
+
+document.getElementById('menuIcon').addEventListener('click', openMenu);
+const buttons = document.querySelectorAll('a.menu-link');
+buttons.forEach(button => {
+    button.addEventListener('click', openMenu);
+});

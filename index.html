@@ -11,7 +11,12 @@
 <body>
 
     <nav class="navegacao">
-        <ul class="menu">
+        <div class="menu-icon" id="menuIcon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
             <li>
                 <a class="menu-link" href="#inicio">Início</a>
             </li>
@@ -38,8 +43,9 @@
         </p>
     </main>
 
-    <section id="sobre" class="section">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
+    <section class="section">
+        <div class="spacing-menu" id="sobre"></div>
+        <h2 class="titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
                 Olá, me chamo Vítor Santos! Sou Desenvolvedor Full-Stack, com experiência em desenvolvimento
@@ -54,7 +60,7 @@
                 </div>
 
                 <div class="tecnologia">
-                    <img src="img/icons/django.svg" alt="logo django" class="icon django">
+                    <img src="img/icons/django.svg" alt="logo django" class="icon inverter-cor">
                     <p class="nome-tecnologia">Django</p>
                 </div>
 
@@ -102,6 +108,10 @@
                     <img src="img/icons/firebase.svg" alt="logo firebase" class="icon">
                     <p class="nome-tecnologia">Firebase</p>
                 </div>
+                <div class="tecnologia">
+                    <img src="img/icons/github.svg" alt="logo github" class="icon inverter-cor">
+                    <p class="nome-tecnologia">GitHub</p>
+                </div>
 
             </div>
 
@@ -112,7 +122,8 @@
         </div>
     </section>
 
-    <section class="section" id="projetos">
+    <section class="section">
+        <div class="spacing-menu" id="projetos"></div>
         <h2 class="titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
 
@@ -214,7 +225,8 @@
 
     </section>
 
-    <section class="section" id="servicos">
+    <section class="section">
+        <div class="spacing-menu" id="servicos"></div>
         <h2 class="titulo">O que posso fazer por você:</h2>
         <div class="servicos-caixa">
             <div class="servicos-card">
@@ -248,8 +260,9 @@
             </div>
     </section>
 
-    <section id="contato" class="section">
-        <h2 class="contato-titulo">Entre em Contato:</h2>
+    <section class="section">
+        <div class="spacing-menu" id="contato"></div>
+        <h2 class="titulo" id="contato">Entre em Contato:</h2>
         <form class="formulario-contato" id="formulario" onsubmit="sendMessage(event)">
             <div class="grupo-form">
                 <input type="text" class="campo-form" placeholder="Informe seu nome: " id="nome">
@@ -259,6 +272,17 @@
             </div>
             <button type="submit" class="botao-form">Enviar via WhatsApp</button>
         </form>
+        <div class="contato-caixa">
+            <a class="contato-icon" href="vitor.santos800411@gmail.com">
+                <img src="img/icons/gmail.svg" alt="logo gmail" class="contato-imagem">
+            </a>
+            <a class="contato-icon" href="https://www.linkedin.com/in/v%C3%ADtor-santos-86142423b/">
+                <img src="img/icons/lindedin.svg" alt="logo linkedin" class="contato-imagem">
+            </a> 
+            <a class="contato-icon" href="https://github.com/vitorgsantoss">
+                <img src="img/icons/github.svg" alt="logo github" class="contato-imagem ">
+            </a>
+        </div>
     </section>
 
     <script src="scripts.js"></script>
