@@ -19,8 +19,17 @@ function openMenu() {
     menu.classList.toggle('active');
 }
 
+function adjustHeight() {
+    document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+}
+
+window.addEventListener('resize', adjustHeight);
+adjustHeight();
+
+
 document.getElementById('menuIcon').addEventListener('click', openMenu);
 const buttons = document.querySelectorAll('a.menu-link');
 buttons.forEach(button => {
     button.addEventListener('click', openMenu);
 });
+
