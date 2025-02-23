@@ -2,15 +2,14 @@ function sendMessage(event){
     event.preventDefault()
 
     const name = document.getElementById('nome').value
+    const input_subject = document.getElementById('assunto').value
     const input_msg = document.getElementById('mensagem').value
-    const telephone = '5515997592983'
+    const email = 'vitor.santos800411@gmail.com'
     
-    const msg = `Olá! Meu nome é ${name}.
-    ${input_msg}`
+    const msg = `Olá! Meu nome é ${name}. ${input_msg}`
+    const subject_email= encodeURIComponent(input_subject)
     const msg_formatted = encodeURIComponent(msg)
-    const url = `https://wa.me/${telephone}?text=${msg_formatted}`
-
-    window.open(url, '_blank')
+    const url = `mailto:${email}?subject=${subject_email}&body=${msg_formatted}`
 
 }
 
@@ -18,13 +17,6 @@ function openMenu() {
     var menu = document.getElementById('menu');
     menu.classList.toggle('active');
 }
-
-function adjustHeight() {
-    document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
-}
-
-window.addEventListener('resize', adjustHeight);
-adjustHeight();
 
 
 document.getElementById('menuIcon').addEventListener('click', openMenu);
