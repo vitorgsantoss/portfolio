@@ -178,12 +178,11 @@ h1 {
 }
 
 .projetos-card {
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     border: 1px solid var(--vidro);
     overflow: hidden;
     transition: 0.3s ease-in-out;
-    backdrop-filter: blur(10px);
     cursor: pointer;
 }
 
@@ -308,8 +307,8 @@ h1 {
 }
 
 .deploy-btn {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     width: 60px;
     height: 30px;
     color: var(--claro);
@@ -431,13 +430,9 @@ h1 {
 
 /* Media Queries para telas menores que 480px (dispositivos móveis pequenos) */
 @media (max-width: 480px) {
-    .menu {
-        flex-direction: column;
-        /* Altera o menu para uma coluna */
-        gap: 1rem;
-    }
+    
     .spacing-menu{
-        height: 0;
+        height: 20px;
     }
 
     .foto-perfil {
@@ -446,23 +441,8 @@ h1 {
         height: 200px;
     }
 
-    h1 {
-        font-size: 1.5rem;
-        /* Reduz o tamanho do título principal */
-    }
-
-    .paragrafo-cabecalho {
-        font-size: 0.9rem;
-        /* Reduz o tamanho do parágrafo do cabeçalho */
-    }
-
-    .sobre-paragrafo {
-        font-size: 0.9rem;
-        /* Reduz o tamanho do parágrafo da seção "Sobre" */
-    }
-
     .titulo{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .projetos-caixa {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -470,6 +450,11 @@ h1 {
     }
     .projetos-card{
         height: min-content;
+        
+    }
+    .projetos-card:hover {
+        box-shadow: none;
+        transform: none;
     }
     .projetos-imagem{
         height: 150px;
@@ -555,6 +540,7 @@ h1 {
 
     .menu.active {
         display: flex;
+        justify-content: space-evenly;
         
         /* Mostra o menu quando a classe 'active' é adicionada */
     }
@@ -572,15 +558,15 @@ h1 {
     .baixar-cv {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10
+        50px;
         align-items: center;
     
     }
     
     .botao-cv {
-        padding: 0.5rem 1rem;
-        font-size: 12px;
-
+        padding: 1rem 2rem;
+        font-size: 18px;
         background: var(--cor-secundaria);
         border-radius: 8px;
         font-weight: bold;
