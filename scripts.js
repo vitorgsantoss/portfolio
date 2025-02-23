@@ -10,6 +10,7 @@ function sendMessage(event){
     const subject_email= encodeURIComponent(input_subject)
     const msg_formatted = encodeURIComponent(msg)
     const url = `mailto:${email}?subject=${subject_email}&body=${msg_formatted}`
+    window.open(url, '_blank')
 
 }
 
