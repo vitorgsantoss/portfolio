@@ -122,7 +122,7 @@ h1 {
     margin: 0 auto;
     border-radius: 16px;
     border: 1px solid var(--vidro);
-    backdrop-filter: blut(10px);
+    backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.07);
 }
 
@@ -190,6 +190,7 @@ h1 {
 
 .projetos-card {
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 16px;
     border: 1px solid var(--vidro);
     overflow: hidden;
@@ -206,6 +207,7 @@ h1 {
 
 .info-projetos {
     margin-bottom: 20px;
+    color: var(--claro) !important;
 }
 
 .caixa-textos-projetos {
@@ -283,6 +285,7 @@ h1 {
 
 .servicos-caixa {
     display: grid;
+    backdrop-filter: blur(10px);
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 2rem;
     max-width: 1200px;
@@ -433,7 +436,7 @@ h1 {
     .techs {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-        align-items: center;
+
     }
 
     .deploy-btn {
@@ -448,7 +451,6 @@ h1 {
     }
 
     .info-projetos {
-        color: var(--claro);
         font-size: 1.4rem;
     }
     .paragrafo-projetos{
