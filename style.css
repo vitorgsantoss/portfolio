@@ -474,7 +474,7 @@ h1 {
     }
     .link-externo{
         position: absolute;
-        top: 165px;
+        top: 0px;
         right: 0;
         width: 25px;
         height: 25px;
