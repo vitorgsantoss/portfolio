@@ -22,7 +22,8 @@ html {
 }
 
 body {
-    position: relative; /* Garante que o conteúdo fique acima do fundo */
+    position: relative;
+    /* Garante que o conteúdo fique acima do fundo */
     color: var(--claro);
 }
 
@@ -35,7 +36,8 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0.537)), url('img/background.webp');
     background-size: cover;
     background-position: center center;
-    z-index: -1; /* Coloca o fundo atrás de todo o conteúdo */
+    z-index: -1;
+    /* Coloca o fundo atrás de todo o conteúdo */
 }
 
 a:visited {
@@ -215,14 +217,15 @@ h1 {
     padding: 1.5rem;
 }
 
-.link-externo{
+.link-externo {
     display: none;
 }
 
-.link-externo img{
+.link-externo img {
     width: 15px;
-    
+
 }
+
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
@@ -327,7 +330,6 @@ h1 {
 .repositorio {
     display: flex;
     flex-direction: column;
-    margin-top: auto;
     align-items: flex-end;
     justify-content: flex-end;
 
@@ -335,7 +337,7 @@ h1 {
 
 .repositorio-btn {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     width: 80px;
     height: 30px;
     color: var(--claro);
@@ -353,22 +355,23 @@ h1 {
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
 }
 
-.spacing-menu{
+.spacing-menu {
     height: 50px;
 }
 
-.contato-caixa{
+.contato-caixa {
     display: flex;
     width: 100%;
     margin-top: 70px;
     justify-content: space-around;
 }
 
-.contato-imagem{
+.contato-imagem {
     width: 40px;
     height: 40px;
 }
-.contato-icon{
+
+.contato-icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -447,6 +450,9 @@ h1 {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 
     }
+    .repositorio{
+        margin-top: 10px;
+    }
 
     .repositorio-btn {
         width: 80px;
@@ -462,17 +468,21 @@ h1 {
     .info-projetos {
         font-size: 1.4rem;
     }
-    .paragrafo-projetos{
+
+    .paragrafo-projetos {
         font-size: 1rem;
     }
-    .servicos-descricao{
+
+    .servicos-descricao {
         font-size: 1rem;
     }
+
     .campo-form {
         font-size: 1rem;
         /* Reduz o tamanho dos campos do formulário */
     }
-    .link-externo{
+
+    .link-externo {
         position: absolute;
         top: 0px;
         right: 0;
@@ -481,7 +491,7 @@ h1 {
         margin: 15px;
         display: flex;
         justify-content: center;
-        align-items: center;    
+        align-items: center;
         background: var(--escuro);
         border-radius: 5px;
     }
@@ -489,8 +499,8 @@ h1 {
 
 /* Media Queries para telas menores que 480px (dispositivos móveis pequenos) */
 @media (max-width: 480px) {
-    
-    .spacing-menu{
+
+    .spacing-menu {
         height: 20px;
     }
 
@@ -500,18 +510,21 @@ h1 {
         height: 200px;
     }
 
-    .titulo{
+    .titulo {
         font-size: 2rem;
     }
+
     .projetos-caixa {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         /* Ajusta o grid de projetos */
     }
-    .projetos-card{
+
+    .projetos-card {
         height: min-content;
-        
+
     }
-    .projetos-imagem{
+
+    .projetos-imagem {
         height: 150px;
     }
 
@@ -530,7 +543,7 @@ h1 {
         /* Reduz o padding do botão do formulário */
     }
 
-    
+
 
     .servicos-titulo {
         font-size: 1.4rem;
@@ -587,7 +600,7 @@ h1 {
     .menu.active {
         display: flex;
         justify-content: space-evenly;
-        
+
         /* Mostra o menu quando a classe 'active' é adicionada */
     }
 
@@ -606,9 +619,9 @@ h1 {
         justify-content: center;
         margin-top: 120px;
         align-items: center;
-    
+
     }
-    
+
     .botao-cv {
         padding: 0.6rem 1.2rem;
         font-size: 1rem;
@@ -619,18 +632,21 @@ h1 {
         border: 2px solid var(--cor-secundaria);
         transition: all 0.1s ease-in-out;
     }
-    .contato-imagem{
+
+    .contato-imagem {
         width: 30px;
         height: 30px;
     }
-    .contato-icon{
+
+    .contato-icon {
         width: 40px;
         height: 40px;
     }
 
 }
+
 @media (min-width:768px) {
-    #contato{
+    #contato {
         margin-top: -30px;
     }
 }
