@@ -189,6 +189,7 @@ h1 {
 }
 
 .projetos-card {
+    position: relative;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 16px;
@@ -214,6 +215,14 @@ h1 {
     padding: 1.5rem;
 }
 
+.link-externo{
+    display: none;
+}
+
+.link-externo img{
+    width: 15px;
+    
+}
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
@@ -462,6 +471,19 @@ h1 {
     .campo-form {
         font-size: 1rem;
         /* Reduz o tamanho dos campos do formulário */
+    }
+    .link-externo{
+        position: absolute;
+        top: 165px;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        background: var(--escuro);
+        border-radius: 5px;
     }
 }
 
