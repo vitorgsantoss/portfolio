@@ -149,11 +149,11 @@ h1 {
 
 .botao-cv {
     padding: 0.8rem 1.6rem;
-    background: var(--cor-secundaria);
+    background: var(--cor-primaria);
     border-radius: 10px;
     font-weight: bold;
     color: var(--claro);
-    border: 2px solid var(--cor-secundaria);
+    border: 2px solid var(--cor-primaria);
     transition: all 0.1s ease-in-out;
 }
 
@@ -258,7 +258,8 @@ h1 {
 
 .botao-form {
     color: var(--claro);
-    background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
+    /* background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria)); */
+    background: var(--cor-primaria);
     border: none;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -625,7 +626,7 @@ h1 {
     .botao-cv {
         padding: 0.6rem 1.2rem;
         font-size: 1rem;
-        background: var(--cor-secundaria);
+        background: var(--cor-primaria);
         border-radius: 8px;
         font-weight: bold;
         color: var(--claro);
