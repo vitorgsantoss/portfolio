@@ -284,6 +284,8 @@ h1 {
     font-size: 12px;
     text-align: center;
     text-shadow: 1px 1px 0px #000;
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .icon {
@@ -380,6 +382,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.langchain{
+    height: 50px;
+    width: 50px;
+    margin-bottom: -10px;
+    margin-top: 15px;
 }
 
 @keyframes flutuar {
